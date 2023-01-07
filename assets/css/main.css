@@ -1,0 +1,382 @@
+/*----------------------------------------------     
+    CSS INDEX
+    ===================
+	1. Defaults
+	2. Welcome area
+	3. About me area
+	4. My plan area
+	5. Blog area
+	6. Call to action area
+	7. Footer area
+    	
+---------------------------------------------------*/
+/*-------------------------------------------------*/
+/*    1.    Defaults
+/*-------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  color: #444343;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #151414;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0 0 25px;
+}
+img {
+  max-width: 100%;
+}
+a {
+  color: #0187c4;
+  text-decoration: none;
+}
+a:hover {
+  color: #005fac;
+  text-decoration: none;
+}
+
+a:focus {
+  color: #005fac;
+  text-decoration: none;
+}
+.section,
+header,
+footer {
+  position: relative;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.section {
+  display: flex;
+  align-items: center;
+  margin-top: 130px;
+}
+h2.section-title {
+  font-size: 40px;
+  line-height: 47px;
+  font-weight: 700;
+}
+button {
+  cursor: pointer;
+}
+.btn {
+  padding: 20px 25px;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  border: 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+.btn-white {
+  color: #005fac;
+  background: #fff;
+}
+.btn-white:hover,
+.btn-white:focus,
+.btn-white:active {
+  color: #fff;
+  background: #3fbee7;
+}
+
+.btn-blue {
+  color: #fff;
+  background: #005fac;
+}
+.btn-blue:hover,
+.btn-blue:focus,
+.btn-blue:active {
+  color: #005fac;
+  background: #fff;
+}
+.slide-bg {
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: attachment;
+  background-position: center top;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.overlay {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+/*-------------------------------------------------*/
+/*    2.    Welcome area
+/*-------------------------------------------------*/
+.section.welcome-area {
+  margin-top: 0;
+  height: 100%;
+  width: 100%;
+  justify-content: end;
+}
+.welcome-area .section-header {
+  position: relative;
+  text-align: right;
+  padding-left: 615px;
+}
+.slide-title {
+  color: #fff;
+  font-size: 65px;
+  line-height: 76px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.slide-description {
+  color: #fff;
+  font-size: 16px;
+  line-height: 26px;
+}
+.section-header .btn {
+  margin-top: 10px;
+}
+/*-------------------------------------------------*/
+/*    3.    About me area
+/*-------------------------------------------------*/
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */ /*does makes it automatic center, problem is in the assignment it's not on exact center. it's little bellow then center of the section. That's why it's not dynamically achievable.*/
+  gap: 90px;
+  color: #444343;
+}
+.about-text {
+  margin-top: 240px;
+}
+.about-me .section-title {
+  padding-right: 30px;
+}
+.about-me .section-description {
+  padding-right: 90px;
+}
+ul li {
+  background: url("../../assets/images/icons/list-icon.svg") no-repeat left
+    center;
+  padding: 0 0 0 34px;
+  list-style: none;
+  margin: 0;
+  vertical-align: middle;
+}
+/*-------------------------------------------------*/
+/*    4.    My plan area
+/*-------------------------------------------------*/
+.my-plan-area .section-title {
+  text-align: center;
+}
+.my-plan-items {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.my-plan-item img {
+  margin-bottom: 24px;
+}
+.my-plan-title,
+.blog-title,
+.subscribe-title {
+  margin-bottom: 16px;
+}
+/*-------------------------------------------------*/
+/*    5.    Blog area
+/*-------------------------------------------------*/
+.section.blog-area {
+  justify-content: unset;
+}
+.blog-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 90px;
+  margin-top: 50px;
+}
+
+.blog-item figure img {
+  -webkit-filter: sepia(100%);
+  filter: sepia(100%);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.blog-item figure:hover img {
+  -webkit-filter: sepia(0);
+  filter: sepia(0);
+}
+
+/*-------------------------------------------------*/
+/*    6.    Call to action
+/*-------------------------------------------------*/
+.section.call-area {
+  display: block;
+}
+.call-content {
+  position: relative;
+}
+.call-content .slide-bg,
+.call-content .overlay {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+.call-content .section-header {
+  position: relative;
+  width: 460px;
+  padding: 54px 65px;
+}
+.call-content .section-title {
+  color: #fff;
+}
+.overlay.blue {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#005fac+0,005fac+100&0.8+0,0+100 */
+  background: -moz-linear-gradient(
+    left,
+    rgba(0, 95, 172, 0.8) 0%,
+    rgba(0, 95, 172, 0) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    rgba(0, 95, 172, 0.8) 0%,
+    rgba(0, 95, 172, 0) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgba(0, 95, 172, 0.8) 0%,
+    rgba(0, 95, 172, 0) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc005fac', endColorstr='#00005fac',GradientType=1 ); /* IE6-9 */
+}
+
+/*-------------------------------------------------*/
+/*    7.    Footer area
+/*-------------------------------------------------*/
+footer {
+  margin-top: 130px;
+  background: #151414;
+  color: #fff;
+  padding: 130px 0;
+}
+.future .section-title {
+  color: #fff;
+  font-size: 45px;
+  line-height: 57px;
+}
+.footer-items {
+  display: flex;
+  justify-content: space-between;
+}
+.future {
+  max-width: 485px;
+}
+p.email {
+  margin-bottom: 16px;
+}
+.social a {
+  margin-right: 18px;
+}
+
+.subscribe {
+  width: 325px;
+}
+.subscribe-title {
+  color: #f3f3f3;
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 30px;
+}
+input[type="email"] {
+  padding: 20px;
+  display: block;
+  width: 100%;
+  background-color: #151414;
+  border: 1px solid #ffffff;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  outline: none;
+  margin-bottom: 16px;
+}
+input[type="email"]:focus {
+  border: 1px solid rgb(1, 135, 196);
+  -webkit-box-shadow: 0 0 5px rgba(1, 135, 196, 1);
+  -moz-box-shadow: 0 0 5px rgba(1, 135, 196, 1);
+  box-shadow: 0 0 5px rgba(1, 135, 196, 1);
+}
+input[type="email"]::-webkit-input-placeholder {
+  color: #f3f3f3;
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+input[type="email"]:-moz-placeholder {
+  color: #f3f3f3;
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+input[type="email"]::-moz-placeholder {
+  color: #f3f3f3;
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+input[type="email"]:-ms-input-placeholder {
+  color: #f3f3f3;
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
