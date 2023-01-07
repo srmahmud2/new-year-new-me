@@ -12,4 +12,4 @@ Used Pure HTML5
 As well as pure CSS3
 ```
 
-> I look forward to your feedback! :)
+> I look forward to your feedback! :crossed_fingers:
